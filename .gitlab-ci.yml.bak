@@ -1,0 +1,12 @@
+image: docker:stable
+variables:
+    PROJECT: "pharmtaximeteor"
+    KEYS_DEV: "-p 127.0.0.1:9030:3000"
+    KEYS_PROD: "-p 127.0.0.1:9030:3000"
+    BEFOR_BUILD_DEV: "cat /dev/null > both/constants/.server.js | echo \"export const SERVER = 'dev';export const TYPE = 'pro';\" > both/constants/.server.js"
+    BEFOR_BUILD_PROD: "cat /dev/null > both/constants/.server.js | echo \"export const SERVER = 'prod';export const TYPE = 'pro';\" > both/constants/.server.js"
+
+include: 
+  - project: 'root/template-gitlab'
+    ref: master
+    file: '/template_pht_meteor_gitlab_ci.yml'

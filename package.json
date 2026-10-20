@@ -1,0 +1,71 @@
+{
+  "name": "pharmtaxi",
+  "private": true,
+  "scripts": {
+    "start": "MONGO_URL=mongodb://pharmtaxi:meteor@localhost:27027/PHTForSLF?authSource=admin&slaveOk=true meteor run",
+    "remote": "MONGO_URL=mongodb://pharmtaxi:meteor@mongodb.socmedica.com:27027/PHTForSLF?authSource=admin&directConnection=false&replicaSet=prod&readPreference=secondaryPreferred&ssl=false meteor run",
+    "local": "MONGO_URL=mongodb://pharmtaxi:meteor@mongodb.socmedica.com:27027/PHTForSLF?authSource=admin&directConnection=false&replicaSet=prod&readPreference=secondaryPreferred&ssl=false meteor run --settings localsettings.json",
+    "prod": "MONGO_URL=mongodb://pharmtaxi:meteor@mongodb.socmedica.com:27027/PHTForSLF?authSource=admin&directConnection=false&replicaSet=prod&readPreference=secondaryPreferred&ssl=false meteor run",
+    "dev": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.4",
+    "@zxing/library": "^0.17.1",
+    "axios": "^0.19.2",
+    "craco-less": "^1.17.0",
+    "fibers": "^5.0.0",
+    "history": "^4.10.1",
+    "less": "^3.12.2",
+    "less-loader": "^6.1.0",
+    "meteor-node-stubs": "^1.0.0",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "moment": "^2.26.0",
+    "rc-datepicker": "^5.0.16",
+    "rc-swipeout": "^2.0.11",
+    "react": "^16.13.0",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.13.0",
+    "react-dropzone": "^11.3.4",
+    "react-slick": "^0.26.1",
+    "react-text-mask": "^5.4.3",
+    "react-virtualized": "^9.22.3",
+    "save": "^2.4.0",
+    "semantic-ui-react": "^0.88.2",
+    "simpl-schema": "^1.10.2",
+    "slick-carousel": "^1.8.1",
+    "typescript": "^4.1.5",
+    "url-mapper": "^2.0.0",
+    "yandex-map-react": "^1.1.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/index.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "autoprefixer": "^6.7.7",
+    "postcss": "^6.0.23",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-load-config": "^1.2.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-easy-import": {},
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    },
+    "excludedPackages": []
+  }
+}

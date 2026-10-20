@@ -1,0 +1,8 @@
+node_modules/
+both/constants/server.js
+./both/constants/server.js
+/both/constants/.server.js
+both/constants/.server.js
+
+/.vs/pharmtaxi-meteor/v16
+/.vs/pharmtaxi-meteor/config/applicationhost.config

@@ -1,0 +1,43 @@
+export default {
+  name: "", // Название ДВ или ТН
+  group: null, // группа раствора (0 - нет раствора, больше 0 - раствор)
+  specials: null,
+  edit: true,
+  freq: null,
+  freq_id: null,
+  duration: null,
+  duration_id: null,
+  pdate: null,
+  pkey: null,
+  pproto: null,
+  proto: null,
+  proto_date: null,
+  proto_key: null,
+  calc: {
+    dosageBaseUnit: "248",
+    dosage: [0],
+    count: 0,
+    dosageUnit: "248",
+    dayCount: 1,
+    fullDosage: [0],
+    weightDosage: [0],
+    dayDosage: [0],
+    dayWeightDosage: [0],
+    durationCount: 1,
+    durationUnit: "75",
+    fullSpeed: [0],
+    weightSpeed: [0],
+    tintSpeed: 0,
+    liquidSpeed: 0,
+  },
+  schedule: {
+    dateStart: null,
+    dateFinish: null,
+    finishAlternate: null,
+    clarifications: null, //уточнения
+    interval: null,
+    once: null,
+    week: null,
+    calendar: null,
+  },
+};

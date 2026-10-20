@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Microsoft Sans Serif";
+  src: url("microsoft/MicrosoftSansSerif.eot");
+  src: local("Microsoft Sans Serif"), local("MicrosoftSansSerif"), url("microsoft/MicrosoftSansSerif.eot?#iefix") format("embedded-opentype"),
+    url("microsoft/MicrosoftSansSerif.woff2") format("woff2"), url("microsoft/MicrosoftSansSerif.woff") format("woff"),
+    url("microsoft/MicrosoftSansSerif.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url("stem/Stem-Light.eot");
+  src: local("Stem Light"), local("Stem-Light"), url("stem/Stem-Light.eot?#iefix") format("embedded-opentype"),
+    url("stem/Stem-Light.woff2") format("woff2"), url("stem/Stem-Light.woff") format("woff"),
+    url("stem/Stem-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url("stem/Stem-Medium.eot");
+  src: local("Stem Medium"), local("Stem-Medium"), url("stem/Stem-Medium.eot?#iefix") format("embedded-opentype"),
+    url("stem/Stem-Medium.woff2") format("woff2"), url("stem/Stem-Medium.woff") format("woff"),
+    url("stem/Stem-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url("stem/Stem-Bold.eot");
+  src: local("Stem Bold"), local("Stem-Bold"), url("stem/Stem-Bold.eot?#iefix") format("embedded-opentype"),
+    url("stem/Stem-Bold.woff2") format("woff2"), url("stem/Stem-Bold.woff") format("woff"),
+    url("stem/Stem-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url("stem/Stem-SemiLight.eot");
+  src: local("Stem Semi Light"), local("Stem-SemiLight"),
+    url("stem/Stem-SemiLight.eot?#iefix") format("embedded-opentype"), url("stem/Stem-SemiLight.woff2") format("woff2"),
+    url("stem/Stem-SemiLight.woff") format("woff"), url("stem/Stem-SemiLight.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url("stem/Stem-ExtraLight.eot");
+  src: local("Stem Extra Light"), local("Stem-ExtraLight"),
+    url("stem/Stem-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("stem/Stem-ExtraLight.woff2") format("woff2"), url("stem/Stem-ExtraLight.woff") format("woff"),
+    url("stem/Stem-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url("stem/Stem-Thin.eot");
+  src: local("Stem Thin"), local("Stem-Thin"), url("stem/Stem-Thin.eot?#iefix") format("embedded-opentype"),
+    url("stem/Stem-Thin.woff2") format("woff2"), url("stem/Stem-Thin.woff") format("woff"),
+    url("stem/Stem-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Stem";
+  src: url("stem/Stem-Regular.eot");
+  src: local("Stem Regular"), local("Stem-Regular"), url("stem/Stem-Regular.eot?#iefix") format("embedded-opentype"),
+    url("stem/Stem-Regular.woff2") format("woff2"), url("stem/Stem-Regular.woff") format("woff"),
+    url("stem/Stem-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

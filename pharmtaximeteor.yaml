@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pht-meteor
+  labels:
+    k8s-app: pht-meteor
+    project: pht
+  namespace: dockers
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: pht-meteor
+  template:
+    metadata:
+      name: pht-meteor
+      labels:
+        k8s-app: pht-meteor
+    spec:
+      containers:
+      - name: pht-front
+        image: 10.254.0.11:5000/pharmtaximeteor
+        imagePullPolicy: Always
+      dnsPolicy: None
+      dnsConfig:
+        nameservers:
+          - 10.254.0.5
+          - 192.169.14.223
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: pht-meteor-svc
+  namespace: dockers
+  labels:
+    k8s-app: pht-meteor-svc
+    project: pht
+spec:
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 3000
+    targetPort: 3000
+    nodePort: 30930
+  selector:
+    k8s-app: pht-meteor
